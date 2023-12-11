@@ -3,14 +3,31 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Demo of component-name Web Component" />
-		<title>component-name Web Component Demo</title>
+		<meta name="description" content="Demo of share-button Web Component" />
+		<title>share-button Web Component Demo</title>
 
-		<script type="module" src="component-name.js"></script>
+		<style>
+			share-button:not(:defined) {
+				display: none;
+			}
+			
+			share-button:defined a {
+				display: none;
+			}
+		</style>
+
+		<script type="module" src="share-button.js"></script>
 	</head>
 	<body>
-    		<component-name>
-			<!-- slotted content -->
-		</component-name>
+    		<share-button>
+  			<button>Share</button>
+		</share-button>
+
+		<hr>
+		
+		<share-button>
+  			<button>Share</button>
+  			<a href="#">Fallback sharing link</a>
+		</share-button>
 	</body>
 </html>
