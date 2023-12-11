@@ -1,14 +1,14 @@
 {
-  "name": "@daviddarnes/component-name",
+  "name": "@daviddarnes/share-button",
   "version": "1.0.0",
-  "description": "A Web Component for…",
-  "main": "component-name.js",
+  "description": "A Web Component to share web pages using the native OS sharing options",
+  "main": "share-button.js",
   "scripts": {
     "start": "npx http-server ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daviddarnes/component-name.git"
+    "url": "git+https://github.com/daviddarnes/share-button.git"
   },
   "keywords": [
     "web",
@@ -22,12 +22,12 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/daviddarnes/component-name/issues"
+    "url": "https://github.com/daviddarnes/share-button/issues"
   },
   "author": {
     "name": "David Darnes",
     "email": "me@daviddarnes.com",
     "url": "https://darn.es/"
   },
-  "homepage": "https://github.com/daviddarnes/component-name#readme"
+  "homepage": "https://github.com/daviddarnes/share-button#readme"
 }
