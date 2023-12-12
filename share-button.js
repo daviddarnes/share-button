@@ -1,14 +1,12 @@
 class ShareButton extends HTMLElement {
   static register(tagName) {
-    if ("customElements" in window) {
+    if ("customElements" in window && window.navigator.share) {
       customElements.define(tagName || "share-button", ShareButton);
     }
   }
   
   connectedCallback() {
-    if (window.navigator.share) {
-      this.button.addEventListener("click", this.share);
-    }
+    this.button.addEventListener("click", this.share);
   }
 
   get button() {
