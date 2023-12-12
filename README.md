@@ -2,7 +2,7 @@
 
 A Web Component to share web pages using the native OS sharing options.
 
-**[Demo](https://daviddarnes.github.io/share-button/demo.html)**
+**[Demo](https://daviddarnes.github.io/share-button/demo.html)** | **[Further reading](https://darn.es/share-button-web-component/)**
 
 ## Examples
 
