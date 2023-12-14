@@ -6,7 +6,7 @@ A Web Component to share web pages using the native OS sharing options.
 
 ## Examples
 
-General example usage:
+General usage example:
 
 ```html
 <script type="module" src="share-button.js"></script>
@@ -19,6 +19,8 @@ General example usage:
 Example using a fallback links:
 
 ```html
+<script type="module" src="share-button.js"></script>
+
 <share-button>
   <button>Share</button>
   <a
@@ -50,6 +52,8 @@ Example using a fallback links:
 Example using a fallback `readonly` input:
 
 ```html
+<script type="module" src="share-button.js"></script>
+
 <share-button>
   <button>Share</button>
   <label>
