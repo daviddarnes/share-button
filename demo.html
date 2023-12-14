@@ -1,33 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Demo of share-button Web Component" />
-		<title>share-button Web Component Demo</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demo of share-button Web Component" />
+    <title>share-button Web Component Demo</title>
 
-		<style>
-			share-button:not(:defined) {
-				display: none;
-			}
-			
-			share-button:defined a {
-				display: none;
-			}
-		</style>
+    <script type="module" src="share-button.js"></script>
+  </head>
+  <body>
+    <h2>General example</h2>
+    <share-button>
+      <button>Share</button>
+    </share-button>
 
-		<script type="module" src="share-button.js"></script>
-	</head>
-	<body>
-    		<share-button>
-  			<button>Share</button>
-		</share-button>
+    <hr />
 
-		<hr>
-		
-		<share-button>
-  			<button>Share</button>
-  			<a href="#">Fallback sharing link</a>
-		</share-button>
-	</body>
+    <h2>Example using a fallback links</h2>
+    <share-button>
+      <button>Share</button>
+      <a
+        href="https://twitter.com/intent/tweet/?url=https://website.com&amp;text=Example&amp;via=DavidDarnes"
+      >
+        Post to Twitter
+      </a>
+      <a href="https://facebook.com/sharer/sharer.php?u=https://website.com">
+        Post to Facebook
+      </a>
+      <a
+        href="https://www.linkedin.com/shareArticle?url=https://website.com&amp;title=Example&amp;source=Title&amp;mini=true"
+      >
+        Post to LinkedIn
+      </a>
+      <!-- Find more sharing links here https://codepen.io/daviddarnes/pen/GRJgoxy -->
+    </share-button>
+    <style>
+      share-button:not(:defined) button,
+      share-button:defined a {
+        display: none;
+      }
+      share-button:not(:defined) a + a {
+        margin-inline-start: 1ch;
+      }
+    </style>
+
+    <hr />
+
+    <h2>
+      Example using a fallback
+      <code>readonly</code>
+      input
+    </h2>
+    <share-button>
+      <button>Share</button>
+      <label>
+        Share this page
+        <input
+          type="url"
+          readonly
+          value="https://daviddarnes.github.io/share-button/demo.html"
+          onclick="this.select()"
+        />
+      </label>
+    </share-button>
+    <style>
+      share-button:not(:defined) button,
+      share-button:defined label {
+        display: none;
+      }
+    </style>
+  </body>
 </html>
