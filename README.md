@@ -101,7 +101,7 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://www.unpkg.com/@daviddarnes/share-button@1.0.0/share-button.js"
+  src="https://www.unpkg.com/@daviddarnes/share-button@1.1.2/share-button.js"
 ></script>
 ```
 
@@ -109,7 +109,7 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script
   type="module"
-  src="https://esm.sh/@daviddarnes/share-button@1.0.0"
+  src="https://esm.sh/@daviddarnes/share-button@1.1.2"
 ></script>
 ```
 
