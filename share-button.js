@@ -18,7 +18,8 @@ class ShareButton extends HTMLElement {
     window.navigator
       .share({
         title: root.title,
-        text: root.title + "\n" + window.location.href,
+        text: root.title,
+        url: window.location.href,
       })
       .then(() => console.log("Page was succesffuly shared"))
       .catch((error) => console.log(error));
